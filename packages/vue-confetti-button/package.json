@@ -1,0 +1,59 @@
+{
+  "name": "vue-confetti-button",
+  "version": "1.0.0",
+  "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/vue-confetti-button.ssr.js",
+  "browser": "dist/vue-confetti-button.esm.js",
+  "module": "dist/vue-confetti-button.esm.js",
+  "unpkg": "dist/vue-confetti-button.min.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development rollup -c rollup.config.js -w",
+    "build": "cross-env NODE_ENV=production rollup -c rollup.config.js",
+    "build:ssr": "cross-env NODE_ENV=production rollup -c rollup.config.js --format cjs",
+    "build:es": "cross-env NODE_ENV=production rollup -c rollup.config.js --format es",
+    "build:unpkg": "cross-env NODE_ENV=production rollup -c rollup.config.js --format iife"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.2.0",
+    "gsap": "^3.2.6",
+    "nanoid": "^3.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-alias": "^2.2.0",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-replace": "^2.3.2",
+    "@vue/cli-plugin-babel": "^4.3.1",
+    "@vue/cli-service": "^4.3.1",
+    "cross-env": "^7.0.2",
+    "minimist": "^1.2.5",
+    "rollup": "^2.7.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-vue": "^5.1.6",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "browserslist": [
+    "current node",
+    "last 2 versions and > 2%",
+    "ie > 10"
+  ],
+  "prettier": {
+    "vueIndentScriptAndStyle": false
+  }
+}

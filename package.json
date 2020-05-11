@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "lerna": "^3.20.2"
+  },
+  "scripts": {
+    "serve": "concurrently -n serve:component,serve:example 'yarn serve:component' 'yarn serve:example'",
+    "serve:example": "lerna exec --scope vue-confetti-button-example yarn serve",
+    "serve:component": "lerna exec --scope vue-confetti-button yarn serve",
+    "build": "lerna exec --scope vue-confetti-button yarn build"
+  }
+}
