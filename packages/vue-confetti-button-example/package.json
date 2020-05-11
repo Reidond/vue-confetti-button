@@ -15,7 +15,7 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
-    "vue-confetti-button": "^1.0.0"
+    "vue-confetti-button": "^0.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
