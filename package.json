@@ -10,5 +10,6 @@
     "serve:example": "lerna exec --scope vue-confetti-button-example yarn serve",
     "serve:component": "lerna exec --scope vue-confetti-button yarn serve",
     "build": "lerna exec --scope vue-confetti-button yarn build"
-  }
+  },
+  "licence": "LGPL-3.0-only"
 }
